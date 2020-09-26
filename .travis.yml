@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t dbernat/DockerWithReact -f Dockerfile.dev .
+  - docker build -t dbernat/dockerwithreact -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true dbernat/DockerWithReact npm run test
+  - docker run -e CI=true dbernat/dockerwithreact npm run test
